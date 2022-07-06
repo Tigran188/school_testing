@@ -1,0 +1,12 @@
+.elemImgName p{
+    cursor: default;
+}
+.elemImgName p img{
+    cursor: pointer;
+}
+.prevPic{
+    max-width: 50%;
+}
+.prevPic img {
+    width: 100%;
+}

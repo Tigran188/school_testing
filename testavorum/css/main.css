@@ -1,0 +1,142 @@
+a:hover{
+    text-decoration: none !important;
+}
+body .header{
+    position: absolute;
+}
+.addInFolder{
+    text-transform: uppercase;
+}
+@media(min-width: 1201px){
+    .second{
+        display: none !important;
+    }
+    .row3{
+        height: 80px;
+        display: flex;
+    }
+    .testSettings{
+        border: 2px solid #EEEEEE;
+        width: 420px;
+        border-radius: 10px;
+        padding: 0 21px !important;
+        box-sizing: border-box;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        background: #fff;
+        z-index: 2;
+    }
+    .openList{
+        color: #ccc;
+        font-weight: 700;
+        width: 100%;
+        font-family: Arial !important;
+        font-size: 12px;
+        line-height: 52px;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .openList i{
+        color: #000;
+    }
+}
+@media (max-width: 1200px) {
+    .testSettings{
+        border: 2px solid #EEEEEE;
+        width: 420px;
+        border-radius: 10px;
+        padding: 0 21px !important;
+        box-sizing: border-box;
+        cursor: pointer;
+        background: #fff;
+        z-index: 2;
+    }
+    .afterSound{
+        display: none !important;
+    }
+    .openList{
+        color: #ccc;
+        width: 100%;
+        font-family: Arial !important;
+        font-size: 12px;
+        line-height: 52px;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.selectList{
+    margin: 0;
+}
+.selectList li{
+    margin: 0 !important;
+    border-top: 2px solid #EEEEEE;
+    background: none !important;
+    padding-left: 0 !important;
+}
+.selectList li a{
+    color: #C5C5C5;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: Arial !important;
+    line-height: 13.8px;
+    padding: 19px 0 !important;
+    display: block;
+}
+.openColor{
+    color: #EEEEEE !important;
+}
+.openList>img{
+    width: 11px;
+    height: 11px;
+    transition: .4s all ease;
+}
+.rotate{
+    transform: rotate(180deg);
+    transition: .4s all ease;
+}
+.content ul.editOptions li a{
+    width: auto !important;
+}
+.content ul.editOptions li{
+    width: auto !important;
+}
+.content ul.editOptions{
+    position: static !important;
+}
+.logsTable tr td{
+    border: 1px solid #ccc;
+}
+@media(max-width: 768px){
+    .testSettings{
+        margin: 0 auto;
+    }
+}
+.footer_info .footer_search .img{
+    top: 50%;
+    transform: translateY(-50%);
+}
+.just_bet.fl_dir{
+    align-items: flex-start;
+}
+td.grade a{
+    font-family: Arial !important;
+}
+.disabled a{
+    color: #EEEEEE !important;
+    cursor: default;
+}
+.selectList li a:hover{
+    color: black;
+}
+.middle{
+    position: static !important;
+}
+
+

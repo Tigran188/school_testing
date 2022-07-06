@@ -1,0 +1,13 @@
+.fold label{
+    display: flex;
+    width: 100%;
+    justify-content: right;
+    margin-bottom: -5px;
+}
+.foldImgName p span, .elemImgName p span{
+     overflow: hidden;
+     text-overflow: ellipsis;
+     display: -webkit-box;
+     -webkit-line-clamp: 3;
+     -webkit-box-orient: vertical;
+ }

@@ -1,0 +1,436 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+}
+.arial{
+    font-family: Arial !important;
+}
+.middle{
+    padding-bottom: 0 !important;
+    min-height: 100vh;
+}
+.main-right{
+    border-left: 1px solid #1183C8;
+    position: relative;
+    margin-top: 100px;
+}
+
+.active{
+    opacity: 100% !important;
+    background: #ECECEC;
+}
+.main{
+    width: 100%;
+    /*margin-left: 35px;*/
+}
+.main h3{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+.mainQuestion{
+    padding: 0 23px;
+}
+.mainQuestion span{
+    margin-left: -23px;
+}
+.mainQuestion, .mainQuestion span{
+    font-size: 20px;
+    font-weight: 400;
+}
+.checkLabel{
+    width: 18px;
+    height: 18px;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 2px;
+    display: block;
+    margin-right: 5px;
+
+}
+.checkLabel span{
+    border-radius: 5px;
+    width: 12px;
+    height: 100%;
+    display: none;
+    background: #1183C8;
+}
+.answerVersions label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 400;
+    width: 50%;
+    margin-bottom: 19px;
+}
+.answerVersions{
+    flex-wrap: wrap;
+    display: flex;
+    border-bottom: 1px solid #1183C8;
+    padding-left: 23px;
+    margin-top: 62px;
+}
+.buttonAndCoins{
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+    margin: 5px;
+    align-items: center;
+}
+.buttonAndCoins p{
+    margin-bottom: 0px;
+}
+.buttonAndCoins a{
+    margin: 0;
+}
+.container>div:nth-child(2){
+    width: 100%;
+}
+.next{
+    width: 154px;
+    background: #1183C8;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 31px;
+    margin-top: 5px;
+    font-weight: 700;
+    border-radius: 6px;
+}
+.buttonAndCoins p{
+    color: #A5A5A5;
+    font-size: 18px;
+}
+.allQuestionsList ul{
+    list-style-type: none;
+    margin: 0px 0;
+}
+.allQuestionsList ul li a, .allQuestionsListForMobile ul li{
+    display: flex;
+    justify-content: left;
+    padding-left: 17px;
+    font-size: 20px;
+    font-weight: 700;
+    align-items: center;
+    width: 204px;
+    height: 39px;
+    font-weight: 700;
+    color: #000;
+    opacity: 19%;
+}
+.allQuestionsListForMobile ul li{
+    padding-left: 0 !important;
+}
+.allQuestionsList ul li.active, .allQuestionsListForMobile ul li.active{
+    opacity: 100%;
+    background: #ECECEC;
+}
+.timer{
+    margin: 0 !important;
+    width: auto !important;
+    height: auto !important;
+    top: -90px;
+    position: absolute;
+    font-size: 20px;
+    background: transparent !important;
+}
+textarea{
+    width: 95% !important;
+    height: 175px !important;
+}
+.banner{
+    border-bottom: 1px solid #1183C8;
+    padding-left: 23px;
+    width: 35vw;
+}
+.side1{
+    border-right: 1px solid #1183C8;
+}
+.side1, .side2{
+    width: 50%;
+    border-bottom: 1px solid #1183C8;
+}
+.side1 ul, .side2 ul{
+    list-style-type: none;
+    margin: 0;
+    display: block;
+    width: 100%;
+}
+.side1 ul li:last-child, .side2 ul li:last-child{
+    border-bottom: 0;
+}
+.side1 ul li, .side2 ul li{
+    border-bottom: 1px solid #1183C8;
+    height: 51px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #686868;
+}
+.side1 ul li select{
+    font-size: 18px;
+    color: #686868;
+    font-weight: 400;
+}
+.allQuestionsListForMobile ul li{
+    min-width: 84px;
+    display: flex;
+    justify-content: center;
+}
+
+.side2 ul li{
+    justify-content: center;
+}
+.versions{
+    display: flex;
+    justify-content: space-between;
+}
+select{
+    margin-bottom: 0 !important;
+}
+.side2 ul li select{
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    background-image: url('../images/Polygon.png');
+    background-repeat: no-repeat, repeat;
+    background-position: right .5em top 50%, 0 0;
+    background-size: 8px 8px, 100%;
+    line-height: normal;
+    height: 41px;
+}
+.fileSelect{
+    border: 1px solid #C4C4C4
+;
+    width: 40px;
+    font-size: 18px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    background-image: url('../images/Polygon.png');
+    background-repeat: no-repeat, repeat;
+    background-position: right .5em top 50%, 0 0;
+    background-size: 8px 8px, 100%;
+    line-height: normal;
+}
+.fileSelect::-ms-expand { display: none; }
+*[dir="rtl"] .fileSelect, :root:lang(ar) .fileSelect, :root:lang(iw) .fileSelect {
+    background-position: left .7em top 50%, 0 0;
+    padding: .6em .8em .5em 1.4em;
+}
+.img{
+    width: 92px;
+    height: 92px;
+    background: #C4C4C4;
+    margin-left: 19px;
+}
+ol.comparisonByImg{
+    list-style-type: none;
+    counter-reset: num;
+}
+ol.comparisonByImg li{
+    height: auto;
+    padding: 5px 0;
+    margin: 16px 0;
+    display: flex;
+    align-items: center;
+}
+.side1 .comparisonByImg li:before{
+    content: counter(num);
+    counter-increment: num;
+    font-size: 18px;
+}
+.side1 ul.comparisonByImg{
+    list-style-type: auto;
+}
+.comparisonByImg li{
+    font-size: 18px;
+}
+ol.comparisonByImg li>div{
+    display: flex;
+    width: 257px;
+    justify-content: space-between;
+    align-items: center;
+}
+@media (max-width: 1280px) and (min-width: 1025px){
+    ol.comparisonByImg:first-of-type{
+        margin-right: 40px !important;
+    }
+    .allQuestionsList ul{
+        width: max-content;
+    }
+    .allQuestionsList ul li{
+        flex-wrap: nowrap;
+        width: auto;
+
+    }
+    .container{
+        width: auto;
+        max-width: 100% !important;
+    }
+    .middle{
+        margin-left: 25px !important;
+        max-width: 100% !important;
+    }
+}
+@media(max-width: 1024px) and (min-width: 769px){
+    .sidebar{
+        float: none !important;
+        width: 100vw !important;
+        margin: 0 !important;
+    }
+    .container{
+        flex-wrap: wrap;
+    }
+    .banner{
+        width: 100%;
+    }
+
+}
+.allQuestionsListForMobile{
+    max-width: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: none;
+}
+.allQuestionsListForMobile ul{
+    display: flex;
+    border-bottom: 1px solid #1183C8;
+    margin-bottom: -2px;
+}
+.allQuestionsListForMobile ul::-webkit-scrollbar{
+    background: #fff;
+    height: 2px;
+}
+.allQuestionsListForMobile ul::-webkit-scrollbar-thumb {
+    background: #1183C8;
+}
+@media(min-width: 1375px){
+    ol.comparisonByImg:first-of-type{
+        margin-right: 84px !important;
+    }
+}
+@media(max-width: 1160px){
+    ol.comparisonByImg li>div{
+        width: 100% !important;
+    }
+}
+@media(max-width: 1024px){
+    ol.comparisonByImg li>div{
+        width: 70% !important;
+    }
+}
+@media(max-width: 768px){
+    ol.comparisonByImg li>div{
+        width: 80% !important;
+    }
+}
+@media(max-width: 768px) and (min-width: 320px){
+    ol.comparisonByImg li>div{
+        max-width: 200px;
+    }
+    .banner{
+        width: 100%;
+    }
+    .main-right{
+        display: none;
+    }
+    .allQuestionsListForMobile{
+        display: block;
+        overflow: hidden;
+    }
+    .allQuestionsListForMobile ul{
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none !important;
+        overflow-x: scroll;
+        margin: 0px !important;
+    }
+    .main{
+        margin-left: 0;
+    }
+    .answerVersions label{
+        min-width: 283px;
+    }
+    .answerVersions{
+        margin-top: 22px;
+        padding-left: 0;
+        justify-content: center;
+    }
+    .comparisonByImg{
+        margin: 0 !important;
+    }
+    .img{
+        margin-left: 5px;
+    }
+    ol.comparisonByImg li{
+        justify-content: space-around;
+    }
+    ol.comparisonByImg li>div{
+        width: 85%;
+    }
+    .side1{
+        width: 60%;
+    }
+    .side2{
+        width: 40%;
+    }
+}
+.fileSelect{
+    position: relative;
+}
+.fileSelect:before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: #0a962f;
+}
+.side2Text{
+    width: 45% !important;
+}
+.versionsTxt, .versionsFile{
+    justify-content: left !important;
+    border-bottom: 1px solid #1183C8;
+}
+.side2Text ul li{
+    justify-content: right !important;
+}
+.versionsTxt .side1, .versionsTxt .side2Text, .versionsFile .side1, .versionsFile .side2{
+    border-bottom: none !important;
+    margin-bottom: 31px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
