@@ -1,0 +1,878 @@
+*{
+    font-family: Arial !important;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.task ol, .correctMistake ol{
+    margin-top: 13px;
+}
+.content h1{
+    font-family: Arial !important;
+}
+.editElem{
+
+}
+a:hover{
+    text-decoration: none;
+    color: initial;
+}
+.arial{
+    font-family: Arial !important;
+}
+.addQuestionWindow, .editQuestionWindow{
+    width: 700px;
+    background: #fff;
+    border-radius: 6px;
+    padding: 14px 14px 16px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    min-height: 290px;
+}
+.addQuestionWindow h2, .editQuestionWindow h2{
+    font-family: Arial !important;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 34.5px;
+    margin: 0;
+}
+.addQuestionWindow p, .editQuestionWindow p{
+    font-family: Arial !important;
+    font-size: 14px;
+    line-height: 16.1px;
+}
+.foldersList ul li{
+    cursor: pointer;
+    background: none;
+}
+.selectType{
+    position: relative;
+    margin-bottom: 11px;
+}
+.selectType ul{
+    margin-top: 15px !important;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+.selectType ul li{
+    height: 30px;
+    cursor: pointer;
+    font-family: Arial !important;
+    background: none;
+    margin-bottom: 0;
+}
+.selectType ul li:hover{
+    color: #1183C8;
+}
+.selectType span{
+    font-family: Arial !important;
+    font-size: 14px;
+    cursor: pointer;
+}
+.selectType>ul{
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    list-style-type: none;
+    background: #fff;
+    z-index: 2;
+    list-style-type: none;
+}
+.background-blue{
+    background: transparent !important;
+}
+.folderInner, .modalWindow, .addQuestionWindow, .foldersList li ul, .editQuestionWindow{
+    display: none;
+}
+body{
+    position: relative;
+}
+.makeFolderName, .editFolderNameModal{
+    display: none;
+}
+.side2{
+    margin: 0 0 10px 0;
+    list-style-position: inside;
+}
+.side2 li{
+    margin: 5.5px 0;
+}
+.sidebarTitle{
+    margin-top: 0px !important;
+    font-family: Arial;
+    font-weight: 700;
+    font-size: 20px;
+}
+.middleTitle{
+    font-family: Arial !important;
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 0;
+}
+h2.middleTitle2{
+    font-family: Arial !important;
+    font-weight: 400;
+    font-size: 24px;
+    margin-top: 23px;
+}
+.folder{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 200px;
+    padding: 25px 7px 11px 36px;
+    border: 1px solid #E5E5E5;
+    border-radius: 6px;
+    margin: 0 9px 41px;
+    position: relative;
+}
+.folder>img{
+    width: 73px;
+    display: block;
+    cursor: pointer;
+}
+.addFolder a{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    margin-bottom: 6px;
+}
+.addFolder{
+    width: 159px;
+    border: 1px solid #E5E5E5;
+    border-radius: 6px;
+    height: 159px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.addSymbol{
+    color: #1183C8;
+    text-align: center;
+    font-size: 96px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+.addLink{
+    text-align: center;
+    font-family: Arial !important;
+    font-weight: 400;
+    color: #000;
+    font-size: 12px;
+    line-height: 18.2px;
+    margin: 0 auto;
+}
+.deleteFolder{
+    margin: 0;
+    text-align: right;
+    color: #FFBCBC;
+    font-family: Arial !important;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+.folderInfo{
+    font-family: Arial !important;
+    margin: 27px 0 0 0;
+    line-height: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+.folderInfo>span:first-child{
+    font-size: 18px;
+    width: 100%;
+    word-break: break-all;
+    overflow: hidden;
+}
+.editFolder{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.editFolder a:first-child{
+    width: 13px;
+    height: 13px;
+}
+.editFolder a:last-child{
+    width: 17.22px;
+    height: 12px;
+    margin-left: 4px;
+}
+.foldersContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+@media (max-width: 1024px) {
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .middleMain{
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+.modalWindow{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    left:0px;
+    top: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+.editFolderNameModal{
+    box-shadow: 0px 5px 20px #888888;
+}
+.makeFolderName, .editFolderNameModal{
+    position: fixed;
+    z-index: 2;
+    border: 1px solid rgba(0, 0, 0, .4);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: 6px;
+    padding: 16px;
+    width: max-content;
+    box-sizing: border-box;
+}
+.folderName{
+    font-family: Arial !important;
+    color: #1183C8;
+    display: flex;
+    align-items: center;
+}
+.folderName input{
+    margin: 0 0 0 11px !important;
+    width: 503px;
+    height: 30px !important;
+    border: 2px solid #E5E5E5 !important;
+    border-radius: 6px !important;
+}
+.variant{
+    margin: 0;
+    padding-left: 0;
+}
+hr{
+    border-bottom: 1px solid #1183C8 !important;
+}
+.variant5{
+    padding-top: 20px;
+    border-top: 1px solid #1183C8;
+    margin-top: 20px;
+}
+#hamematutyunQuestion{
+    margin-bottom: 20px;
+}
+.variant li{
+    align-items: center;
+    justify-content: space-between;
+    margin: 5.5px 0;
+    display: list-item;
+    list-style-position: inside;
+}
+.varyantTitle{
+    margin-top: 11px !important;
+    font-weight: 400;
+}
+.activate, .cancel, .update{
+    width: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    font-size: 10px;
+    color: #fff;
+    font-weight: 700;
+    font-family: Arial !important;
+    padding: 8px 0 7px 0;
+}
+.activate, .update{
+    background: #1183C8;
+}
+.cancel{
+    color: #C5C5C5;
+    background: #fff;
+    margin-left: 3px;
+    border: 1px solid #E5E5E5;
+    border-radius: 6px;
+}
+body .buttons .add{
+    justify-content: flex-end;
+}
+body div.buttons{
+    display: flex;
+    justify-content: flex-end;
+}
+.buttons a{
+    font-size: 13px;
+    font-weight: 400;
+}
+@media (max-width: 767px){
+    .makeFolderName, .editFolerNameModal{
+        width: 95%;
+    }
+    .folderName{
+        width: 98%;
+        display: flex;
+        flex-direction: column;
+    }
+    .buttons a:last-child{
+        margin-left: 3px;
+    }
+    .buttons a{
+        margin: 0;
+        width: 131px;
+    }
+    .folderName input{
+        width: 98%;
+        margin: 0 !important;
+        height: 30px !important;
+    }
+    .activate, .cancel, .update{
+        margin: 2px auto;
+    }
+    .foldersContainer{
+        justify-content: center;
+    }
+    .middleTitle, .middleTitle2{
+        margin-left: 25px;
+    }
+}
+.middle{
+    min-height: 70vh;
+    padding-top: 100px;
+}
+.errors{
+    color: red;
+    line-height: 15px;
+}
+.folderInner{
+    position: absolute;
+    background: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 6px;
+    display: none;
+    height: 100%;
+    overflow-x: hidden;
+    width: 1170px;
+}
+.olderFolders h2{
+    font-family: Arial !important;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 22.4px;
+    text-align: center;
+    margin: 26px 20px 43px 26px;
+    min-width: 190px;
+}
+.olderFolders{
+    width: max-content;
+}
+ul{
+    margin:0 !important;
+    list-style-position: inside;
+    list-style-type: none;
+}
+.foldersList{
+    padding-left: 20px;
+}
+.foldersList ul{
+    padding: 0;
+}
+.foldersList ul li{
+    font-family: Arial !important;
+    padding: 7px 0 7px 15px;
+    margin-bottom: 0;
+}
+.foldersList ul li img{
+    width: 24px;
+    margin-right: 20px;
+}
+ul li.active{
+    background:#F0F0F0;
+}
+.addNewFolder{
+    position: absolute;
+    bottom: 16px;
+    line-height: 22.4px;
+    font-family: Arial !important;
+    text-align: center;
+    background: #E5E5E5;
+    width: 270px;
+    margin: 0 auto;
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 6px;
+    color: #1183C8;
+    width: 100%;
+}
+.olderFolders{
+    position: relative;
+    height: 100%;
+}
+.top{
+    background: #F4F4F4;
+    padding: 23px 5px 13px 40px;
+    height: max-content;
+    width: 100%;
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+}
+.ToLeft a:hover{
+    color: #fff;
+}
+.ToLeft a{
+    width:29px;
+    height: 29px;
+    background: #1183C8;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navigation div{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.ToRight a{
+    width:29px;
+    height: 29px;
+    background: #1183C8;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 11px;
+}
+.breadcrumb{
+    color: #818181;
+    font-family: Arial !important;
+    margin: 11px 0 0 0;
+    text-transform: uppercase;
+}
+.addFileOrFolder{
+    display: flex;
+    justify-content: space-between;
+    padding: 3px 8px;
+    font-size: 14px;
+    height: 29px;
+    text-transform: uppercase;
+}
+.addFileOrFolder span{
+    font-family: Arial !important;
+    font-size: 14px;
+    font-weight: 400;
+}
+.del, .delElem{
+    display: block;
+    color: #FFBCBC;
+    text-align: right;
+    margin-bottom: -10px;
+    position: absolute;
+    width: 20px;
+    top: 0;
+    right: 0;
+}
+.delete{
+    color: #000;
+    font-weight: 400;
+    padding: 3px 8px;
+    display: flex;
+    font-size: 14px;
+    height: 29px;
+}
+.add{
+    position: relative;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    width: 95%;
+    margin: 0 auto;
+}
+.add ul{
+    position: absolute;
+    right: 0;
+    display: none;
+    border-radius: 6px;
+    background: #F2F2F2;
+    list-style-type: none;
+    padding-left: 0;
+    z-index: 2;
+    top:30px;
+}
+.add ul li{
+    background: none;
+    padding-left: 0;
+    margin: 0;
+}
+.add ul li a span{
+    font-family: Arial !important;
+
+}
+.add ul li a{
+    padding: 5px 11px 3px 7px;
+    height: 32px;
+    display: flex;
+    justify-content: space-between;
+    width: 215px;
+    color: #1183C8;
+    align-items: center;
+    margin: 0 auto 3px;
+}
+.add a:first-child:hover{
+    color: #fff;
+}
+.cancel:hover{
+    color: #000;
+}
+.add ul li a img{
+    height: 22px;
+    display: block;
+}
+.add ul li a:hover{
+    background: #D0D0D0;
+}
+.mainmaterials{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+.fold, .sectElement{
+    width: 80px;
+    text-align: center;
+    margin: 0 15px;
+    height: max-content;
+    position: relative;
+    padding-top: 12px;
+}
+.fold img, .sectElement img{
+    width: 80%;
+    height: 59px;
+}
+.materialsCenter{
+    padding: 14px 40px 0 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+.fold p, .sectElement p{
+    font-family: Arial !important;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 3px auto 0;
+    color: #000;
+    width: 78%;
+    overflow: hidden;
+}
+div.select{
+    bottom: 8px;
+    right: 4px;
+    justify-content: flex-end !important;
+    width: 100%;
+    display: flex;
+}
+.select a{
+    height: 29px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial !important;
+    border-radius: 6px;
+    padding: 0 14px;
+    margin: 0 4.5px;
+}
+.b1{
+    background: #1183C8;
+    color: #fff;
+}
+.b1:hover{
+    color: #fff;
+}
+.b2{
+    background: #C5C5C5;
+    color: #000;
+}
+.b2:hover{
+    color: #000;
+}
+@media (max-width: 1280px){
+    .folderInner{
+        width: 85%;
+    }
+}
+.a{
+    display: block ;
+}
+.d-none{
+    display: none !important;
+}
+.uploadImage1{
+    margin-bottom: 0;
+}
+.uploadImage{
+    cursor: pointer;
+    width: 14px;
+}
+.uploadImage img{
+    width: 100%;
+}
+.addOrCancle{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 5px;
+}
+.quest1{
+    width: 100% !important;
+}
+.question{
+    border: 1px solid #E5E5E5;
+    width: 92%;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+    border-radius: 6px;
+}
+ol li .quest2{
+    width: 92%;
+    display: inline-flex;
+}
+.correctMistake .question .textarea:focus{
+    box-shadow: none;
+}
+.correctMistake .question textarea{
+    width: 83%;
+    border: 0;
+    outline: 0;
+    margin: 0;
+    height: 77px;
+    resize: none;
+    box-shadow: none;
+}
+.question input{
+    box-shadow: none !important;
+    width: 86%;
+    margin: 0 !important;
+    height: 35px !important;
+    border: 0 !important;
+    outline: 0 !important;
+}
+.addQuestion, .editQuestion{
+    font-family: Arial !important;
+    color: #fff;
+    padding: 9px 10px;
+    border-radius: 6px;
+    font-weight: 400;
+    background: #1183C8;
+}
+.addQuestion:hover, .editQuestion{
+    color: #fff;
+}
+.deleteVaryant, .deleteCorrectAnswer{
+    color: red;
+    font-family: Arial !important;
+    margin-left: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+}
+.correctAnswer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 6.5px 0;
+}
+.correctAnswer span{
+    font-size: 14px;
+    font-family: Arial !important;
+    font-weight: 400;
+}
+.delQ{
+    font-size: 14px;
+    color: #1183C8;
+    font-family: Arial !important;
+    background: #E5E5E5;
+    padding: 9px 10px;
+    margin-left: 17px;
+    border-radius: 6px;
+}
+.correctList{
+    margin: 0;
+}
+.comparisonType{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.comparisonType select{
+    margin-bottom: 0;
+}
+a.addAnswer{
+    margin: 30px 0 16px 0;
+    display: block;
+}
+.addAnswer span, .addCorrectAnswer span{
+    color: #1183C8;
+}
+.addAnswer, .addCorrectAnswer{
+    color: #000;
+}
+.comparisonType span {
+    font-family: Arial !important;
+}
+.upload{
+    color: #fff;
+    background: #1183C8;
+    font-family: Arial !important;
+    padding: 5px 13px;
+    border-radius: 6px;
+}
+.bernel{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+.allCorrectnswers{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.Correctnswers{
+    display: flex;
+    align-items: center;
+    margin: 7.5px;
+}
+.Correctnswers select{
+    margin: 0 5px;
+    width: 45px;
+    font-family: Arial !important;
+
+}
+.modalWindow>div{
+    max-height: 70vh;
+    overflow-y: scroll;
+}
+@media (max-width: 767px) {
+    .selectType ul li{
+        height: 40px;
+    }
+    .folderName{
+        align-items: flex-start;
+    }
+    .addQuestionWindow, .editQuestionWindow{
+        width: 95%;
+        min-width: 300px;
+        margin: 0 auto;
+        min-height: 350px;
+    }
+    .question{
+        width: 88% !important;
+    }
+    div.question.quest1{
+        width: 100% !important;
+    }
+    .correctAnswer{
+        justify-content: left;
+    }
+    .addOrCancle{
+        justify-content: center;
+    }
+    .select{
+        padding-bottom: 14px;
+        margin-top: 15px;
+    }
+    .select a{
+        padding: 20px 14px;
+    }
+    .top{
+        flex-wrap: wrap;
+    }
+    .olderFolders{
+        display: none;
+    }
+    .fold, .sectElement{
+        display: block;
+        margin: 0 auto;
+    }
+}
+.addAnswer+hr{
+    margin: 0 !important;
+}
+ol li::marker{
+    font-family: Arial !important;
+}
+.question.quest2{
+    align-items: center !important;
+}
+.variant4+.addAnswer{
+    margin: 12px 0 2px;
+}
+select.correctList{
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url('../images/trig_blue.png');
+    background-repeat: no-repeat, repeat;
+    background-position: right .5em top 50%, 0 0;
+    background-size: 8px 8px, 100%;
+    line-height: normal;
+    height: 31px;
+}
+.c-blue{
+    color: #0f6ecd;
+}
+.backgroundBlack {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.foldImgName p, .elemImgName p{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    word-break: break-all;
+}
+.foldImgName p span, .elemImgName p span{
+    width: max-content;
+    margin: 0 5px;
+    word-break: break-all;
+    overflow: hidden;
+}
+.foldImgName p img, .elemImgName p img, body .editElem{
+    width: 11px;
+    height: 16px;
+}
+input[type="file"]{
+    display: none;
+}

@@ -1,0 +1,41 @@
+.header {
+    background: #ffffff;
+    /*background: -moz-linear-gradient(top,  #00bce6 0%, #00adda 28%, #0085bc 90%, #0080b8 100%); !* FF3.6+ *!*/
+    /*background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00bce6), color-stop(28%,#00adda), color-stop(90%,#0085bc), color-stop(100%,#0080b8)); !* Chrome,Safari4+ *!*/
+    /*background: -webkit-linear-gradient(top,  #00bce6 0%,#00adda 28%,#0085bc 90%,#0080b8 100%); !* Chrome10+,Safari5.1+ *!*/
+    /*background: -o-linear-gradient(top,  #00bce6 0%,#00adda 28%,#0085bc 90%,#0080b8 100%); !* Opera 11.10+ *!*/
+    /*background: -ms-linear-gradient(top,  #00bce6 0%,#00adda 28%,#0085bc 90%,#0080b8 100%); !* IE10+ *!*/
+    /*background: linear-gradient(to bottom,  #00bce6 0%,#00adda 28%,#0085bc 90%,#0080b8 100%); !* W3C *!*/
+
+    /*behavior: url(PIE.htc);*/
+    /*-pie-background: linear-gradient(#00bce6, #0080b8);*/
+}
+.login_btn a{
+    color: black;
+}
+.login_btn {
+    border: 1px solid #DADADA ;
+
+}
+.header_adress,
+.header_adress a,
+.site_name {
+    color: #9dd2e9;
+}
+.sd_menu a:hover,
+.sd_menu a.active {
+    color: #0080b8;
+}
+.collectiv_mail a,
+.box_progress a {
+    color: #0086bb;
+}
+.content .collectiv_page .active a {
+    background: #0084bb;
+}
+blockquote {
+    border-left: 3px solid #0082b9;
+}
+
+
+

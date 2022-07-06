@@ -1,0 +1,333 @@
+*{
+    box-sizing: border-box;
+}
+.foldersList ul li{
+    cursor: default !important;
+}
+.foldersList ul li .dropSymbol{
+    cursor: pointer;
+}
+input::-webkit-input-placeholder {
+    color: rgba(111, 111, 111, 0.41) !important;
+}
+.arial{
+    font-family: Arial !important;
+}
+.d-block{
+    display: block !important;
+}
+.middleMain{
+    margin-top: 23px;
+    width: 100%;
+}
+h3.mainTitle{
+    font-size: 20px ;
+    font-weight: 400;
+    line-height: 18px;
+    margin-bottom: 18px;
+}
+.sidebar{
+    margin-right: 32px;
+}
+input.testNameInput{
+    display: block;
+    height: 36px !important;
+    font-size: 12px;
+    line-height: 14px !important;
+    border-radius: 6px;
+    border: 1px solid #C5C5C5 !important;
+    padding: 11px 10px !important;
+    margin: 0 !important;
+    width: 516px;
+    font-weight: 700;
+}
+.mainSettings{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding-bottom: 39px;
+    border-bottom: 1px solid #1183C8;
+    align-items: center;
+}
+.mainSettings>div{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin: 0 10px;
+}
+.mainSettings div label{
+    display: flex;
+    color: #6F6F6F;
+    font-weight: 700;
+    font-size: 12px;
+    margin-bottom: 0;
+    align-items: center;
+}
+.mainSettings span:first-child{
+    flex-wrap: nowrap;
+    width: min-content;
+}
+.number{
+    border: 1px solid #C5C5C5;
+    border-radius: 6px;
+    display: flex;
+    padding: 0 5px;
+    justify-content: center;
+    margin-left: 15px;
+}
+.mainSettings label .number input[type='number']{
+    background: transparent;
+    width: 20px;
+    font-weight: 700;
+    color: #6F6F6F;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    /*border-radius: 6px;*/
+    padding: 11px 0px;
+    font-size: 12px;
+    height: auto;
+    line-height: 13.8px;
+    -moz-appearance: textfield;
+    -webkit-appearance: textfield;
+    appearance: textfield;
+    text-align: center;
+    margin: 0;
+    cursor: auto;
+}
+.number span{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.number span img{
+    cursor: pointer;
+}
+.mainSettings label .number input[type='number']::-webkit-inner-spin-button,
+.mainSettings label .number input[type='number']::-webkit-outer-spin-button{
+    display: none;
+}
+.mainSettings label input{
+    margin: 0 0 0 15px
+}
+.folderForQuestion{
+    margin-top: 10px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.container.center.d-flex{
+    overflow: visible;
+}
+.footer{
+    height: 100%;
+}
+.folderForQuestion>a{
+    margin-bottom: 0;
+    color:  #6E6E6E;
+    font-weight: 700;
+    line-height: 13.8px;
+    padding: 14px 10px 9px;
+    height: auto;
+    background-color: #fff;
+    border-radius: 6px;
+    width: 215px;
+    border: 1px solid #C5C5C5;
+    cursor: pointer;
+    text-align: center;
+    font-size: 12px;
+}
+.mainSettingsRow2 img{
+    width: 51px;
+}
+div label.questionsCount{
+    align-items: flex-start;
+}
+.point, body input.countOfQuestions{
+    width: 73px;
+    background: transparent;
+    height: 37px;
+    margin-bottom: 14px;
+}
+.points, .questionsCount{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #1183C8;
+    opacity: 40%;
+    text-transform: uppercase;
+}
+.info{
+    width: 12px;
+    height: 12px;
+    font-size: 9px;
+    cursor: pointer;
+    border-radius: 50%;
+    color: #1183C8;
+    border: 1px solid #1183C8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    min-width: 12px;
+    min-height: 12px;
+}
+.buttons{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 13px !important;
+    border-top: 1px solid #1183C8;
+    width: 100% !important;
+}
+.buttons a:hover{
+    background: #1183C8;
+    color: #fff;
+    opacity: 1;
+    transition: .2s all ease;
+}
+.button{
+    display: flex;
+    width: 215px;
+    height: 37px;
+    color: #1183C8;
+    border: 1px solid #1183C8;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+}
+.button:nth-child(2){
+    margin-left: 15px;
+}
+.middleMain{
+    margin-right: 30px;
+}
+@media (max-width: 1322px) and (min-width: 769px){
+    .mainSettings span:first-child{
+        width: min-content;
+    }
+    span.info{
+        max-width: 12px;
+    }
+    .mainSettings label input{
+        margin: 0 0 0 5px;
+    }
+    input.testNameInput{
+        width: 336px;
+    }
+    .button:nth-child(2){
+        margin-left: 8px;
+    }
+    .mainSettings{
+        justify-content: space-around;
+    }
+    .footer_middle table tbody{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sidebar{
+        margin: 0 25px !important;
+    }
+}
+@media(max-width: 768px) and (min-width: 671px){
+    .mainSettingsRow2 a{
+        font-size: 12px;
+    }
+    .mainSettings{
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+    .mainSettings span{
+        width: min-content;
+    }
+    .mainSettings label input[type='number']{
+        width: 30px;
+    }
+    .mainSettings div{
+        margin-bottom: 10px;
+    }
+    input.testNameInput{
+        width: 95% !important;
+        margin: 0 auto !important;
+        display: block !important;
+    }
+    .mainTitle{
+        margin-left: 7px;
+    }
+    select{
+        width: 176px !important;
+    }
+    .button{
+        width: 140px;
+    }
+    .buttons{
+        justify-content: center;
+    }
+}
+input[type="time"]{
+    width: 95px;
+    border: 1px solid #C5C5C5;
+    color: #C5C5C5;
+}
+@media(max-width: 670px) and (min-width: 320px){
+    .sidebar{
+        margin-right: auto;
+    }
+    .mainSettings{
+        flex-direction: column;
+        align-items: center;
+    }
+    .mainSettings span{
+        width: max-content;
+    }
+    .number{
+        margin-bottom: 0 !important;
+    }
+    .mainSettings>div{
+        margin: 10px 0 10px 15px;
+    }
+    input.testNameInput{
+        width: 100%;
+    }
+}
+.del{
+    color: red;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.addNum{
+    width: 15px;
+}
+body .disabled-link{
+    pointer-events: none;
+    cursor: default;
+}
+body .disabled-link:hover{
+    pointer-events: none;
+    cursor: default;
+    background: transparent;
+    color: #0b66c3;
+}
+body span.time input{
+    margin: 0 ;
+    width: 30px;
+    border: 0;
+}
+.time{
+    border: 1px solid #cccccc;
+    display: flex;
+    margin-left: 15px;
+    border-radius: 4px;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
